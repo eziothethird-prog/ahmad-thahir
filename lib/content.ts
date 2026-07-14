@@ -220,7 +220,7 @@ export const CONTENT = {
   pricing: [
     {
       name: { id: "Landing Page", en: "Landing Page" },
-      price: "Rp 1.500.000 – 3.000.000",
+      price: { id: "Rp 1.500.000 – 3.000.000", en: "$100 – 200" },
       desc: {
         id: "Satu halaman untuk promosi produk/jasa/acara.",
         en: "Single page for promoting a product, service, or event.",
@@ -245,7 +245,7 @@ export const CONTENT = {
     },
     {
       name: { id: "Company Profile", en: "Company Profile" },
-      price: "Rp 4.000.000 – 8.000.000",
+      price: { id: "Rp 4.000.000 – 8.000.000", en: "$250 – 500" },
       desc: {
         id: "Website profil usaha multi-halaman dengan CMS sederhana.",
         en: "Multi-page business profile website with a simple CMS.",
@@ -270,7 +270,7 @@ export const CONTENT = {
     },
     {
       name: { id: "Sistem / Web App Custom", en: "Custom System / Web App" },
-      price: "Rp 8.000.000 – 20.000.000+",
+      price: { id: "Rp 8.000.000 – 20.000.000+", en: "$500 – 1,300+" },
       desc: {
         id: "Sistem booking, e-commerce, atau dashboard dengan logika bisnis khusus.",
         en: "Booking systems, e-commerce, or dashboards with custom business logic.",
@@ -295,7 +295,7 @@ export const CONTENT = {
     },
     {
       name: { id: "Maintenance / Retainer", en: "Maintenance / Retainer" },
-      price: { id: "Mulai Rp 500.000 / bulan", en: "From Rp 500,000 / month" },
+      price: { id: "Mulai Rp 500.000 / bulan", en: "From $35 / month" },
       desc: {
         id: "Perawatan berkala untuk website yang sudah berjalan.",
         en: "Ongoing care for an already-live website.",
