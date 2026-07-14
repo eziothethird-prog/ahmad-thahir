@@ -7,7 +7,7 @@ import type { Localized } from "@/lib/content";
 const SCREENSHOTS: Record<string, string> = {
   "proj-awmtour": "/screenshots/proj-awmtour.png",
   "proj-liveaboard": "/screenshots/proj-liveaboard.png",
-  // "proj-evely": "/screenshots/proj-evely.png",  // add when a public URL / image exists
+  "proj-evely": "/screenshots/proj-evely.png",
 };
 
 export function Prototype({ t }: { t: Localized }) {

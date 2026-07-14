@@ -27,7 +27,7 @@ export const CONTENT = {
     email: "firstahmadthahir@gmail.com",
     phone: "+62 851-1123-0286",
     links: [
-      { label: "Portfolio", href: "https://frost.rip" },
+      { label: "Portfolio", href: "https://ahmad-thahir.vercel.app/" },
       { label: "GitHub", href: "https://github.com/eziothethird-prog/" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/ahmad-thahir/" },
       { label: "frost.rip", href: "https://www.frost.rip/atsta/" },
