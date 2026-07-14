@@ -45,13 +45,18 @@ public/
 Semua teks, proyek, harga, dan skill ada di **`lib/content.ts`** dalam format `{ id, en }`.
 Ubah di satu tempat, kedua bahasa langsung ikut.
 
-## Menambah screenshot prototype
-1. Taruh gambar di `public/screenshots/` (mis. `awmtour.png`).
-2. Buka `components/Prototype.tsx`, isi map `SCREENSHOTS`:
-   ```ts
-   const SCREENSHOTS = { "proj-awmtour": "/screenshots/awmtour.png" };
-   ```
-   (`slotId` tiap proyek didefinisikan di `lib/content.ts`.)
+## Screenshot prototype
+Screenshot situs live di-capture otomatis dengan Playwright:
+```bash
+npx playwright install chromium   # sekali saja
+npm run screenshots               # capture ke public/screenshots/
+```
+Target diatur di [`scripts/capture-screenshots.mjs`](scripts/capture-screenshots.mjs)
+(`slot` harus sama dengan `slotId` proyek di `lib/content.ts`). Hasilnya otomatis
+dipakai lewat map `SCREENSHOTS` di `components/Prototype.tsx`.
+
+Kalau mau pakai gambar sendiri, cukup taruh file di `public/screenshots/`
+dengan nama `<slotId>.png` (mis. `proj-evely.png`) lalu daftarkan di map tersebut.
 
 ## Deploy
 - **Vercel** (paling mudah): push ke GitHub → import di vercel.com → selesai.

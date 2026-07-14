@@ -2,9 +2,12 @@
 
 import type { Localized } from "@/lib/content";
 
-// Optional real screenshots — drop files in /public and map them by slotId.
+// Real screenshots captured by `npm run screenshots` (see scripts/capture-screenshots.mjs).
+// Keyed by each project's slotId (defined in lib/content.ts).
 const SCREENSHOTS: Record<string, string> = {
-  // "proj-awmtour": "/screenshots/awmtour.png",
+  "proj-awmtour": "/screenshots/proj-awmtour.png",
+  "proj-liveaboard": "/screenshots/proj-liveaboard.png",
+  // "proj-evely": "/screenshots/proj-evely.png",  // add when a public URL / image exists
 };
 
 export function Prototype({ t }: { t: Localized }) {
@@ -15,8 +18,8 @@ export function Prototype({ t }: { t: Localized }) {
       <div className="grid-3" style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
         {demos.map((p) => {
           const shot = SCREENSHOTS[p.slotId];
-          return (
-            <div key={p.slotId} className="card themed hoverable" style={{ overflow: "hidden" }}>
+          const card = (
+            <div className="card themed hoverable" style={{ overflow: "hidden", height: "100%" }}>
               <div
                 style={{
                   display: "flex",
@@ -48,7 +51,8 @@ export function Prototype({ t }: { t: Localized }) {
                   <img
                     src={shot}
                     alt={typeof p.title === "string" ? p.title : "screenshot"}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    loading="lazy"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
                   />
                 ) : (
                   <span style={{ fontSize: 11, color: "var(--muted)", letterSpacing: 0.5 }}>
@@ -56,8 +60,27 @@ export function Prototype({ t }: { t: Localized }) {
                   </span>
                 )}
               </div>
-              <div style={{ padding: "12px 14px", fontSize: 12.5, color: "var(--fg)" }}>{p.title}</div>
+              <div
+                style={{
+                  padding: "12px 14px",
+                  fontSize: 12.5,
+                  color: "var(--fg)",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>{p.title}</span>
+                {p.link ? <span style={{ color: "var(--accent)", fontSize: 12 }}>↗</span> : null}
+              </div>
             </div>
+          );
+          return p.link ? (
+            <a key={p.slotId} href={p.link} target="_blank" rel="noopener noreferrer">
+              {card}
+            </a>
+          ) : (
+            <div key={p.slotId}>{card}</div>
           );
         })}
       </div>
