@@ -20,8 +20,8 @@ export const CONTENT = {
   meta: {
     name: "Ahmad Thahir",
     role: {
-      id: "IT Support | Web Developer | Network & Content",
-      en: "IT Support | Web Developer | Network & Content",
+      id: "AI-Assisted Web Developer · Next.js · React · Laravel · Node.js",
+      en: "AI-Assisted Web Developer · Next.js · React · Laravel · Node.js",
     },
     location: "Makassar, Indonesia",
     email: "firstahmadthahir@gmail.com",

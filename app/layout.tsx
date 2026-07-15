@@ -10,11 +10,12 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmad Thahir — IT Support & Web Developer",
+  title: "Ahmad Thahir — AI-Assisted Web Developer",
   description:
-    "Portfolio Ahmad Thahir — IT Support, Web Developer, Network & Content. React/Next.js, Laravel, Node.js. Berbasis di Makassar, Indonesia.",
+    "Portfolio Ahmad Thahir — AI-Assisted Web Developer. Membangun website production dengan Next.js, React, Laravel, Node.js + workflow AI (Claude Code, Cursor). Berbasis di Makassar, Indonesia.",
   keywords: [
     "Ahmad Thahir",
+    "AI-Assisted Web Developer",
     "Web Developer Makassar",
     "IT Support",
     "Next.js",
@@ -24,9 +25,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ahmad Thahir" }],
   openGraph: {
-    title: "Ahmad Thahir — IT Support & Web Developer",
+    title: "Ahmad Thahir — AI-Assisted Web Developer",
     description:
-      "Portfolio & daftar harga jasa pembuatan website. React/Next.js, Laravel, Node.js.",
+      "Portfolio & daftar harga jasa pembuatan website. AI-assisted development · Next.js, React, Laravel, Node.js.",
     type: "website",
     locale: "id_ID",
   },
