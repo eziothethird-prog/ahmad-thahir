@@ -65,6 +65,9 @@ export function Hero({ t }: { t: Localized }) {
               ./{t.heroLabels.cv}
             </a>
           </div>
+          <a href="/katering" style={{ display: "inline-block", marginTop: 16, fontSize: 13, color: "var(--accent)" }}>
+            Punya usaha katering? Lihat paket order online →
+          </a>
         </div>
       </div>
 

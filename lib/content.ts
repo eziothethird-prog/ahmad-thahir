@@ -295,7 +295,7 @@ export const CONTENT = {
     },
     {
       name: { id: "Maintenance / Retainer", en: "Maintenance / Retainer" },
-      price: { id: "Mulai Rp 500.000 / bulan", en: "From $60 / month" },
+      price: { id: "Mulai Rp 250.000 / bulan", en: "From $60 / month" },
       desc: {
         id: "Perawatan berkala untuk website yang sudah berjalan.",
         en: "Ongoing care for an already-live website.",

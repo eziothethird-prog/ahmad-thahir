@@ -11,6 +11,13 @@ export function Pricing({ t }: { t: Localized }) {
       <div style={{ fontSize: 11.5, color: "var(--muted)", margin: "8px 0 18px", opacity: 0.8 }}>
         # {t.pricingNote}
       </div>
+      <a
+        href="/katering"
+        className="card themed hoverable"
+        style={{ display: "block", padding: "12px 16px", marginBottom: 18, fontSize: 13, borderColor: "var(--accent)" }}
+      >
+        Punya usaha katering? <span style={{ color: "var(--accent)" }}>Lihat paket order online khusus katering →</span>
+      </a>
       <div className="grid-4" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 14 }}>
         {t.pricing.map((tier) => (
           <div
